@@ -1,0 +1,3 @@
+This project involves building an interactive dashboard to visualize and analyze car sales data. 
+The dashboard will provide insights into key metrics like total sales, average price, sales by region, and more. 
+It will be built using Power BI, with data sourced from Excel and transformed using Power Query.
