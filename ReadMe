@@ -1,40 +1,117 @@
-Steps Involved
+# Car Sales Dashboard  
 
-1. Data Preparation in Excel
+This project involves building a **data visualization dashboard** using **Power BI**, **Power Query**, **MS Excel**, and **Advanced DAX** techniques. 
+The dashboard provides key insights into car sales data, focusing on year-to-date (YTD) and month-to-date (MTD) sales performance, regional trends, and company-level analysis.
 
-Data Collection: Gather car sales data from various sources like CRM systems, sales reports, or databases.
-Data Cleaning: Ensure data accuracy by removing inconsistencies, errors, and duplicates.
-Data Formatting: Format the data consistently (e.g., date formats, currency formats).
-Data Organization: Organize the data into a clear and structured format, with appropriate headers and columns.
-2. Data Import and Transformation in Power Query
+---
 
-Connect to Excel: Establish a connection to the Excel file containing the car sales data.
-Data Cleaning: Perform additional data cleaning steps if necessary, such as removing null values, handling errors, and formatting data types.
-Data Transformation: Transform the data to suit the dashboard's needs:
-Create calculated columns (e.g., sales amount, profit margin).
-Group data by specific categories (e.g., car model, region, sales person).
-Filter data to focus on specific time periods or segments.
-Merge data from multiple sources if required.
-3. Data Modeling in Power BI
+## Project Overview  
 
-Create Relationships: Establish relationships between tables based on common fields (e.g., date, product ID).
-Create Measures: Define measures to calculate key metrics like total sales, average price, and sales growth.
-Create Hierarchies: Create hierarchies (e.g., time hierarchies, product hierarchies) to enable drill-down analysis.
-4. Dashboard Design and Development
+The **Car Sales Dashboard** is an interactive tool designed to analyze and present sales data effectively. It allows stakeholders to track metrics such as total sales, cars sold, year-over-year (YOY) growth, and average prices. The dashboard also highlights regional sales performance and body style/color preferences.
 
-Choose Visualizations: Select appropriate visualizations to represent the data effectively (e.g., cards, line charts, bar charts, maps).
-Arrange Layout: Arrange the visualizations on the dashboard in a clear and visually appealing layout.
-Add Interactivity: Implement filters, slicers, and drill-down capabilities to allow users to explore the data.
-Format Visualizations: Customize the appearance of visualizations with colors, fonts, and formatting options.
-5. Deployment and Sharing
+### Key Metrics Visualized:  
+- **YTD Total Sales**: Overall revenue generated year-to-date.  
+- **MTD Total Sales**: Revenue generated in the current month.  
+- **YOY Growth**: Year-over-year percentage growth in cars sold.  
+- **Cars Sold**: Total vehicles sold for YTD and MTD.  
+- **Regional and Weekly Trends**: Sales patterns across different regions and time periods.  
+- **Company-Wise Trends**: Performance comparison across car brands.
 
-Publish to Power BI Service: Publish the dashboard to the Power BI service to share it with others.
-Set Permissions: Control access to the dashboard by setting appropriate permissions for different users.
-Embed in Website or Application: Embed the dashboard in a website or application using Power BI's embed code.
-Additional Considerations
+---
 
-Data Security: Implement security measures to protect sensitive data.
-Performance Optimization: Optimize the dashboard's performance for large datasets and complex calculations.
-User Experience: Design the dashboard with a user-friendly interface and clear visualizations.
-Data Refresh: Schedule regular data refreshes to keep the dashboard up-to-date.
-By following these steps and leveraging the power of Power BI, Power Query, and Excel, you can create a dynamic and informative car sales dashboard that provides valuable insights into your business.
+## Features  
+
+1. **Interactive Visualizations**:
+   - **Cards**: Summarize KPIs like total sales, YOY growth, and average prices.  
+   - **Line Chart**: Weekly trends of sales prices.  
+   - **Pie Charts**: Represent total sales by car color and body style.  
+   - **Map**: Geographical distribution of sales by dealer region.  
+   - **Table**: Compare company-wise performance, including average prices and growth.
+
+2. **Data Interactivity**:
+   - Filters and slicers for dynamic exploration of data.  
+   - Drill-through features for detailed insights.
+
+3. **Advanced Analytics**:
+   - Leverages **Advanced DAX** for custom calculations.  
+   - Tracks YTD/MTD growth and sales differences across periods.  
+
+---
+
+## Tools & Technologies Used  
+
+- **Power BI**: For data modeling, visualization, and interactivity.  
+- **Power Query**: For data cleaning, transformation, and integration.  
+- **MS Excel**: For initial data preparation and exploratory analysis.  
+- **DAX (Data Analysis Expressions)**: For creating advanced metrics and KPIs.  
+
+---
+
+## Workflow Steps  
+
+### 1. **Data Preparation**  
+   - Imported raw car sales data into **MS Excel** for initial exploration and structuring.  
+   - Utilized **Power Query** to:
+     - Remove duplicates and irrelevant fields.  
+     - Handle missing values (e.g., replacing nulls or dropping rows).  
+     - Clean column names and ensure consistent data formats.  
+     - Aggregate data for summarization (e.g., grouping by date, region, and color).  
+
+### 2. **Data Modeling**  
+   - Defined relationships between datasets (e.g., linking sales with regions, car models, and categories).  
+   - Created **calculated columns** for metrics such as total sales, growth rates, and price averages.  
+
+### 3. **Dashboard Creation in Power BI**  
+   - Imported cleaned and modeled data into Power BI.  
+   - Designed visuals to include:
+     - **Cards** for KPIs like YTD Sales, MTD Sales, YOY Growth, and Cars Sold.  
+     - **Line Chart** to track weekly sales trends.  
+     - **Map Visualization** to analyze regional performance.  
+     - **Pie Charts** to display sales distribution by car color and body style.  
+     - **Tables** to compare company-level performance metrics.
+   - Incorporated slicers for filtering by time periods, regions, and categories.  
+
+### 4. **Advanced DAX Implementation**  
+   - Created measures using **DAX** for:
+     - YTD and MTD cumulative sales.  
+     - YOY growth percentages and period comparisons.  
+     - Average prices, cars sold differences, and other KPIs.  
+   - Enhanced calculations with advanced DAX functions such as **CALCULATE**, **DATEADD**, **SUMX**, and **ALLSELECTED**.
+
+### 5. **Dashboard Optimization**  
+   - Applied a professional dark theme for aesthetics and clarity.  
+   - Formatted labels, tooltips, and legends for better readability.  
+   - Optimized visuals for responsive interaction.  
+
+### 6. **Publishing and Sharing**  
+   - Published the dashboard using **Power BI Service** for sharing and collaboration.  
+   - Exported the Power BI report as a **.pbix file** for offline access.
+
+---
+
+
+## Installation & Usage  
+
+1. **Clone the Repository**:
+   ```
+   git clone https://github.com/pranavp48/car-sales-dashboard.git
+   cd car-sales-dashboard
+   ```
+2. Open the `.pbix` file in **Power BI Desktop**.  
+3. Load the associated Excel files if required for data updates.  
+4. Publish the dashboard using **Power BI Service** for online access.  
+
+---
+
+## Future Enhancements  
+
+1. Integrate real-time sales data using APIs.  
+2. Add predictive analytics for sales forecasting.  
+3. Incorporate customer segmentation insights.  
+4. Enhance interactivity with drill-down and drill-through capabilities.
+
+---
+
+## Author  
+
+Developed by **[PranavPanse]**. For questions or feedback, feel free to contact me at [Your Email Address].  
